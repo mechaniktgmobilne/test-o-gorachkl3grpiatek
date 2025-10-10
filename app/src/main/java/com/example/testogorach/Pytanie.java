@@ -4,12 +4,22 @@ public class Pytanie {
     private int idObrazka;
     private boolean odpowiedz;
     private String podpowiedz;
+    private boolean czyUdzielonaPoprawnaODpowiedz;
 
     public Pytanie(String trescPytania, int idObrazka, boolean odpowiedz, String podpowiedz) {
         this.trescPytania = trescPytania;
         this.idObrazka = idObrazka;
         this.odpowiedz = odpowiedz;
         this.podpowiedz = podpowiedz;
+        czyUdzielonaPoprawnaODpowiedz =false;
+    }
+
+    public boolean isCzyUdzielonaPoprawnaODpowiedz() {
+        return czyUdzielonaPoprawnaODpowiedz;
+    }
+
+    public void setCzyUdzielonaPoprawnaODpowiedz(boolean czyUdzielonaPoprawnaODpowiedz) {
+        this.czyUdzielonaPoprawnaODpowiedz = czyUdzielonaPoprawnaODpowiedz;
     }
 
     public String getTrescPytania() {
