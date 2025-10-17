@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Intent intecja = new Intent(MainActivity.this, PodpowiedzActivity.class);
+                        Intent intecja =  new Intent(MainActivity.this, PodpowiedzActivity.class);
                         intecja.putExtra("KTOREPYTANIE",aktualnePytanie);
                         startActivity(intecja);
                     }
